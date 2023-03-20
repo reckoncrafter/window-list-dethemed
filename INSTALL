@@ -1,0 +1,7 @@
+#/bin/bash
+if [[$USER != "root"]]; then
+echo "run as root"
+fi
+
+cp /usr/share/gnome-shell/extensions/window-list*/stylesheet.css /usr/share/gnome-shell/window-list*/stylesheet.css.bak
+cp ./stylesheet.css /usr/share/gnome-shell/extensions/window-list*/stylesheet.css
